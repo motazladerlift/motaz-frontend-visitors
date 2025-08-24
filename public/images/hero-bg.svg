@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <rect width="1920" height="1080" fill="url(#paint0_linear)"/>
+  
+  <!-- City silhouette -->
+  <path d="M0 700L100 680L200 690L300 670L400 680L500 660L600 680L700 650L800 670L900 640L1000 660L1100 640L1200 650L1300 630L1400 650L1500 630L1600 650L1700 630L1800 650L1900 630L1920 630L1920 1080L0 1080L0 700Z" fill="#333333" fill-opacity="0.7"/>
+  
+  <!-- Truck silhouette -->
+  <path d="M1200 800L1300 800L1350 750L1500 750L1550 800L1600 800L1600 900L1200 900L1200 800Z" fill="#555555"/>
+  <path d="M1250 900L1300 900L1300 950L1250 950L1250 900Z" fill="#333333"/>
+  <path d="M1500 900L1550 900L1550 950L1500 950L1500 900Z" fill="#333333"/>
+  
+  <!-- Ladder lift silhouette -->
+  <path d="M1400 750L1400 550" stroke="#FF8C00" stroke-width="10"/>
+  <path d="M1450 750L1450 550" stroke="#FF8C00" stroke-width="10"/>
+  <path d="M1400 700L1450 700" stroke="#FF8C00" stroke-width="10"/>
+  <path d="M1400 650L1450 650" stroke="#FF8C00" stroke-width="10"/>
+  <path d="M1400 600L1450 600" stroke="#FF8C00" stroke-width="10"/>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="paint0_linear" x1="960" y1="0" x2="960" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2C3E50"/>
+      <stop offset="1" stop-color="#4CA1AF"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,385 @@
+.pricing-card {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-bg);
+  box-shadow: 0 8px 20px var(--shadow-color);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px var(--shadow-color);
+  background-color: var(--card-bg-hover);
+}
+
+.pricing-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-top: 1rem;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.price-badge {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  border-radius: 0 0 50% 50% / 0 0 20px 20px;
+  margin: -20px auto 15px;
+  width: 130px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+  line-height: 1;
+}
+
+.period {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.btw-info {
+  display: block;
+  font-size: 0.75rem;
+  margin-top: 5px;
+  font-weight: 500;
+  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 3px 6px;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 5px auto 0;
+}
+
+.pricing-divider {
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+  margin: 15px auto;
+  width: 80%;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.pricing-features li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.feature-icon {
+  color: var(--primary-color);
+  margin-right: 10px;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  transition: color 0.3s ease;
+}
+
+.pricing-notes {
+  background-color: var(--alt-bg-color);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: var(--text-color-secondary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pricing-notes p {
+  margin-bottom: 8px;
+}
+
+.pricing-notes p:last-child {
+  margin-bottom: 0;
+}
+
+.pricing-card-footer {
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--border-color);
+  padding: 20px;
+  margin-top: auto;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.pricing-btn {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 10px 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.pricing-btn:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 140, 0, 0.3);
+}
+
+/* Dark mode specific styles with high contrast */
+[data-theme='dark'] .pricing-card {
+  background-color: var(--dark-card-bg);
+  border-color: var(--dark-border-color);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] .pricing-card:hover {
+  background-color: var(--dark-card-bg-hover);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .pricing-card-title {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .price-badge {
+  background-color: var(--primary-dark);
+}
+
+[data-theme='dark'] .pricing-divider {
+  background: linear-gradient(to right, transparent, var(--primary-light), transparent);
+}
+
+[data-theme='dark'] .pricing-features li {
+  color: #e0e0e0;
+}
+
+[data-theme='dark'] .feature-icon {
+  color: var(--primary-light);
+}
+
+[data-theme='dark'] .pricing-notes {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #cccccc;
+}
+
+[data-theme='dark'] .pricing-card-footer {
+  background-color: var(--dark-card-bg);
+  border-color: var(--dark-border-color);
+}
+
+[data-theme='dark'] .pricing-btn {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+[data-theme='dark'] .pricing-btn:hover {
+  background-color: var(--primary-light);
+  border-color: var(--primary-light);
+  box-shadow: 0 5px 15px rgba(255, 140, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .price-badge {
+    width: 110px;
+    padding: 12px 15px;
+  }
+  
+  .price {
+    font-size: 1.8rem;
+  }
+  
+  .period {
+    font-size: 0.8rem;
+  }
+  
+  .btw-info {
+    font-size: 0.7rem;
+    padding: 2px 5px;
+  }
+  
+  .pricing-card-title {
+    font-size: 1.3rem;
+  }
+  
+  .pricing-features li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+  }
+  
+  .pricing-notes {
+    padding: 12px;
+    font-size: 0.85rem;
+  }
+  
+  .pricing-card-footer {
+    padding: 15px;
+  }
+  
+  .pricing-btn {
+    padding: 8px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Modal Styles */
+.modal-content {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--card-bg);
+  border-radius: 12px 12px 0 0;
+}
+
+.modal-title {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.modal-body {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+.modal-footer {
+  border-top: 1px solid var(--border-color);
+  background-color: var(--card-bg);
+  border-radius: 0 0 12px 12px;
+}
+
+.form-label {
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  border: 1px solid var(--border-color);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(255, 140, 0, 0.25);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+}
+
+.form-control::placeholder {
+  color: var(--text-color-secondary);
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-dark);
+  border-color: var(--secondary-dark);
+  transform: translateY(-2px);
+}
+
+/* Dark mode modal styles */
+[data-theme='dark'] .modal-content {
+  background-color: var(--dark-card-bg);
+  border-color: var(--dark-border-color);
+}
+
+[data-theme='dark'] .modal-header {
+  background-color: var(--dark-card-bg);
+  border-color: var(--dark-border-color);
+}
+
+[data-theme='dark'] .modal-title {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .modal-body {
+  background-color: var(--dark-card-bg);
+  color: #e0e0e0;
+}
+
+[data-theme='dark'] .modal-footer {
+  background-color: var(--dark-card-bg);
+  border-color: var(--dark-border-color);
+}
+
+[data-theme='dark'] .form-control {
+  background-color: var(--dark-input-bg);
+  border-color: var(--dark-border-color);
+  color: #e0e0e0;
+}
+
+[data-theme='dark'] .form-control:focus {
+  background-color: var(--dark-input-bg);
+  color: #e0e0e0;
+}
+
+[data-theme='dark'] .form-control::placeholder {
+  color: #999999;
+}
+
+/* Responsive modal styles */
+@media (max-width: 768px) {
+  .modal-dialog {
+    margin: 1rem;
+  }
+  
+  .modal-title {
+    font-size: 1.2rem;
+  }
+  
+  .form-label {
+    font-size: 0.9rem;
+  }
+  
+  .form-control {
+    font-size: 0.9rem;
+  }
+  
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}

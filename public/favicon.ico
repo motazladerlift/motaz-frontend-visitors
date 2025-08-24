@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Logo Background -->
+  <rect width="200" height="60" rx="5" fill="white"/>
+  
+  <!-- Ladder Icon -->
+  <path d="M30 10L30 50" stroke="#FF8C00" stroke-width="3" stroke-linecap="round"/>
+  <path d="M45 10L45 50" stroke="#FF8C00" stroke-width="3" stroke-linecap="round"/>
+  <path d="M30 15L45 15" stroke="#FF8C00" stroke-width="3" stroke-linecap="round"/>
+  <path d="M30 25L45 25" stroke="#FF8C00" stroke-width="3" stroke-linecap="round"/>
+  <path d="M30 35L45 35" stroke="#FF8C00" stroke-width="3" stroke-linecap="round"/>
+  <path d="M30 45L45 45" stroke="#FF8C00" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Text: Motaz -->
+  <text x="60" y="30" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#333333">Motaz</text>
+  
+  <!-- Text: LADDERLIFT -->
+  <text x="60" y="45" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#FF8C00">LADDERLIFT</text>
+</svg>

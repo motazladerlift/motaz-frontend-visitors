@@ -1,0 +1,409 @@
+/* VerhuizenPage.css */
+.verhuizen-page {
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.verhuizen-hero {
+  position: relative;
+  background-image: url('/images/ladderlift/WhatsApp Image 2025-05-20 at 3.56.35 PM.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.verhuizen-hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(58, 123, 213, 0.8), rgba(255, 140, 0, 0.8));
+  z-index: 1;
+}
+
+.verhuizen-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.verhuizen-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 80px 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.why-choose-us h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.feature-card {
+  background-color: var(--alt-bg-color);
+  border-radius: 10px;
+  padding: 30px 20px;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.icon-wrapper i {
+  font-size: 2rem;
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Services Section */
+.verhuizen-services {
+  padding: 80px 0;
+  background-color: var(--alt-bg-color);
+  color: var(--text-color);
+}
+
+.verhuizen-services h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.service-card {
+  display: flex;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  padding: 25px;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  flex: 0 0 60px;
+  height: 60px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.service-icon i {
+  font-size: 1.8rem;
+}
+
+.service-content {
+  flex: 1;
+}
+
+.service-content h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.service-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.btn-primary-custom {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-custom {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="dark"] .btn-outline-custom {
+  color: white;
+  border-color: white;
+}
+
+/* Cost Information Section */
+.cost-info {
+  padding: 80px 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.cost-info h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.cost-container {
+  background-color: var(--alt-bg-color);
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.cost-container h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.cost-container p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.cost-saving-tips {
+  padding-left: 20px;
+}
+
+.cost-saving-tips li {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Testimonials Section */
+.verhuizen-testimonials {
+  padding: 80px 0;
+  background-color: var(--alt-bg-color);
+  color: var(--text-color);
+}
+
+.verhuizen-testimonials h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.testimonial-card {
+  height: 100%;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+}
+
+.testimonial-content {
+  padding: 30px;
+  position: relative;
+}
+
+.quote-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+  opacity: 0.2;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.testimonial-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  padding-top: 20px;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-author h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+
+.rating {
+  color: #ffc107;
+  font-size: 0.9rem;
+}
+
+/* Call to Action */
+.verhuizen-cta {
+  padding: 80px 0;
+  background-color: var(--bg-color-alt); /* Light gray background */
+  color: var(--text-color); /* Black text in light mode */
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.verhuizen-cta h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.verhuizen-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .verhuizen-cta {
+  background-color: var(--primary-color);
+  color: white;
+  border-top: none;
+  border-bottom: none;
+}
+
+[data-theme="dark"] .feature-card {
+  background-color: var(--dark-bg-color);
+}
+
+[data-theme="dark"] .service-card {
+  background-color: var(--dark-bg-color);
+}
+
+[data-theme="dark"] .cost-container {
+  background-color: var(--dark-bg-color);
+}
+
+[data-theme="dark"] .testimonial-card {
+  background-color: var(--dark-bg-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .verhuizen-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .why-choose-us h2,
+  .verhuizen-services h2,
+  .cost-info h2,
+  .verhuizen-testimonials h2,
+  .verhuizen-cta h2 {
+    font-size: 1.8rem;
+  }
+  
+  .service-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .service-icon {
+    margin: 0 auto 15px;
+  }
+  
+  .cost-container {
+    padding: 20px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+  
+  [data-theme="dark"] .verhuizen-cta h2,
+  [data-theme="dark"] .verhuizen-cta p {
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+}

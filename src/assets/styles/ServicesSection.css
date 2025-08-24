@@ -1,0 +1,121 @@
+.services-section {
+  padding: 80px 0;
+  background-color: var(--bg-color-alt);
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary-custom {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+.services-list-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.service-list-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.service-icon {
+  background-color: var(--primary-color);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  flex-shrink: 0;
+  font-size: 1.2rem;
+}
+
+.service-content {
+  flex: 1;
+}
+
+.service-content h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-color-primary);
+}
+
+.service-content p {
+  margin-bottom: 0;
+  color: var(--text-color-secondary);
+  line-height: 1.6;
+}
+
+/* Dark mode specific styles */
+[data-theme='dark'] .services-section {
+  background-color: var(--bg-color-alt);
+}
+
+[data-theme='dark'] .btn-primary-custom {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+[data-theme='dark'] .btn-primary-custom:hover {
+  background-color: var(--primary-light);
+  border-color: var(--primary-light);
+}
+
+[data-theme='dark'] .service-list-item {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 60px 0;
+  }
+  
+  .service-list-item {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+  }
+  
+  .service-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    font-size: 1rem;
+  }
+  
+  .service-content h4 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+}

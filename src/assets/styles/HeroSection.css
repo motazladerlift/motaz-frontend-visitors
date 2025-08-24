@@ -1,0 +1,102 @@
+.hero-section {
+  position: relative;
+  background-image: url('/images/ladderlift/Hero.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  margin-top: 0; /* إزالة المساحة الفارغة من الأعلى */
+  padding-top: 0; /* إزالة البادينج من الأعلى */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(58, 123, 213, 0.3) 100%); /* تحسين الشفافية */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 0; /* إزالة البادينج من الأعلى */
+}
+
+.hero-title {
+  font-size: 4.5rem; /* زيادة حجم الخط من 4rem إلى 4.5rem */
+  font-weight: 800; /* زيادة وزن الخط من 700 إلى 800 */
+  margin-bottom: 1.5rem; /* زيادة المساحة من 1rem إلى 1.5rem */
+  text-transform: uppercase;
+  letter-spacing: 3px; /* زيادة المسافة بين الحروف من 2px إلى 3px */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* تحسين الظل */
+}
+
+.hero-subtitle {
+  font-size: 2.2rem; /* زيادة حجم الخط من 2rem إلى 2.2rem */
+  font-weight: 600; /* زيادة وزن الخط من 500 إلى 600 */
+  margin-bottom: 2.5rem; /* زيادة المساحة من 2rem إلى 2.5rem */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* تحسين الظل */
+}
+
+.hero-button {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 15px 40px; /* زيادة البادينج من 12px 30px إلى 15px 40px */
+  font-size: 1.2rem; /* زيادة حجم الخط من 1.1rem إلى 1.2rem */
+  font-weight: 700; /* زيادة وزن الخط من 600 إلى 700 */
+  text-transform: uppercase;
+  letter-spacing: 1.5px; /* زيادة المسافة بين الحروف من 1px إلى 1.5px */
+  box-shadow: 0 6px 20px var(--shadow-color); /* تحسين الظل */
+  transition: all 0.3s ease;
+  border-radius: 8px; /* إضافة زوايا مدورة */
+}
+
+.hero-button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-4px); /* زيادة التأثير من -3px إلى -4px */
+  box-shadow: 0 8px 25px var(--shadow-color); /* تحسين الظل عند التمرير */
+}
+
+/* Responsive styles */
+@media (max-width: 991.98px) {
+  .hero-title {
+    font-size: 4rem; /* زيادة من 3.5rem إلى 4rem */
+  }
+  
+  .hero-subtitle {
+    font-size: 2rem; /* زيادة من 1.8rem إلى 2rem */
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-title {
+    font-size: 3.5rem; /* زيادة من 3rem إلى 3.5rem */
+  }
+  
+  .hero-subtitle {
+    font-size: 1.8rem; /* زيادة من 1.5rem إلى 1.8rem */
+  }
+  
+  .hero-button {
+    padding: 12px 30px; /* زيادة من 10px 25px إلى 12px 30px */
+    font-size: 1.1rem; /* زيادة من 1rem إلى 1.1rem */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-title {
+    font-size: 3rem; /* زيادة من 2.5rem إلى 3rem */
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem; /* زيادة من 1.2rem إلى 1.5rem */
+  }
+}

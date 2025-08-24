@@ -1,0 +1,56 @@
+.section-title-wrapper {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  color: var(--text-color);
+  font-weight: 700;
+  margin-bottom: 15px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.section-divider {
+  height: 4px;
+  width: 70px;
+  background-color: var(--primary-color);
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.section-subtitle {
+  color: var(--text-color-secondary);
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  transition: color 0.3s ease;
+}
+
+/* Dark mode specific styles with high contrast */
+.dark-mode .section-title {
+  color: #ffffff; /* Pure white for maximum contrast */
+}
+
+.dark-mode .section-subtitle {
+  color: #e0e0e0; /* Very light gray for good contrast */
+}
+
+/* Dark mode styles applied via theme */
+[data-theme='dark'] .section-title {
+  color: #ffffff !important; /* Force white text in dark mode */
+}
+
+[data-theme='dark'] .section-subtitle {
+  color: #e0e0e0 !important; /* Force light gray text in dark mode */
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+}

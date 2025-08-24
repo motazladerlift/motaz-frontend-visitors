@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Building -->
+  <rect x="100" y="100" width="300" height="400" fill="#e0e0e0"/>
+  <rect x="150" y="150" width="80" height="80" fill="#ffffff" stroke="#cccccc" stroke-width="2"/>
+  <rect x="270" y="150" width="80" height="80" fill="#ffffff" stroke="#cccccc" stroke-width="2"/>
+  <rect x="150" y="270" width="80" height="80" fill="#ffffff" stroke="#cccccc" stroke-width="2"/>
+  <rect x="270" y="270" width="80" height="80" fill="#ffffff" stroke="#cccccc" stroke-width="2"/>
+  <rect x="150" y="390" width="80" height="80" fill="#ffffff" stroke="#cccccc" stroke-width="2"/>
+  <rect x="270" y="390" width="80" height="80" fill="#ffffff" stroke="#cccccc" stroke-width="2"/>
+  
+  <!-- Truck -->
+  <rect x="500" y="450" width="200" height="50" fill="#555555"/>
+  <rect x="550" y="400" width="150" height="50" fill="#666666"/>
+  <circle cx="530" cy="500" r="25" fill="#333333"/>
+  <circle cx="670" cy="500" r="25" fill="#333333"/>
+  
+  <!-- Ladder lift -->
+  <line x1="600" y1="400" x2="600" y2="200" stroke="#FF8C00" stroke-width="10"/>
+  <line x1="650" y1="400" x2="650" y2="200" stroke="#FF8C00" stroke-width="10"/>
+  <line x1="600" y1="350" x2="650" y2="350" stroke="#FF8C00" stroke-width="10"/>
+  <line x1="600" y1="300" x2="650" y2="300" stroke="#FF8C00" stroke-width="10"/>
+  <line x1="600" y1="250" x2="650" y2="250" stroke="#FF8C00" stroke-width="10"/>
+  
+  <!-- Furniture being lifted -->
+  <rect x="580" y="220" width="90" height="40" fill="#8B4513" rx="5"/>
+</svg>

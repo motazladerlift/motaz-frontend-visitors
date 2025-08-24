@@ -1,0 +1,86 @@
+.location-map-section {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+
+.section-title {
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.section-divider {
+  height: 4px;
+  width: 70px;
+  background-color: #ff8c00;
+  margin-bottom: 20px;
+}
+
+.location-text {
+  color: #333;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.map-container {
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.map-container:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.google-map {
+  transition: all 0.3s ease;
+}
+
+.address-card, .contact-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.address-card:hover, .contact-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.address-card h4, .contact-card h4 {
+  color: #ff8c00;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.address-card p, .contact-card p {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.contact-card a {
+  color: #3a7bd5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+  color: #ff8c00;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .location-map-section {
+    padding: 40px 0;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .location-text {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,340 @@
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 10px 0; /* تقليل البادينج من 15px إلى 10px */
+  transition: all 0.3s ease;
+  margin-bottom: 0; /* إزالة المساحة الفارغة تحت الناف بار */
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 8px 0; /* تقليل البادينج عند التمرير */
+}
+
+[data-theme='dark'] .navbar {
+  background-color: rgba(26, 26, 26, 0.95);
+}
+
+[data-theme='dark'] .navbar.scrolled {
+  background-color: rgba(26, 26, 26, 0.98);
+}
+
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  margin-bottom: 0; /* إزالة المساحة الفارغة */
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px; /* إضافة عرض أدنى */
+  min-height: 60px; /* إضافة ارتفاع أدنى */
+  overflow: hidden; /* منع تجاوز اللوجو للحدود */
+}
+
+.navbar-brand img {
+  max-height: 70px; /* زيادة حجم اللوجو من 60px إلى 70px */
+  transition: all 0.3s ease;
+  object-fit: contain;
+  width: auto; /* إضافة عرض تلقائي */
+  filter: brightness(1); /* ضمان سطوع مناسب */
+  display: block; /* ضمان العرض كعنصر block */
+  max-width: 100%; /* منع تجاوز العرض */
+  -webkit-transition: all 0.3s ease; /* دعم WebKit */
+  -moz-transition: all 0.3s ease; /* دعم Firefox */
+  -o-transition: all 0.3s ease; /* دعم Opera */
+  -webkit-object-fit: contain; /* دعم WebKit */
+  -moz-object-fit: contain; /* دعم Firefox */
+}
+
+.navbar.scrolled .navbar-brand img {
+  max-height: 60px; /* زيادة حجم اللوجو عند التمرير من 50px إلى 60px */
+}
+
+/* تحسينات خاصة للوجو الصحيح */
+.navbar-brand img[src*="FurnitureTransport.png"] {
+  max-height: 65px; /* حجم مخصص للوجو الصحيح */
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) brightness(1.05); /* إضافة ظل خفيف وتحسين السطوع */
+  -webkit-filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) brightness(1.05); /* دعم WebKit */
+  -moz-filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) brightness(1.05); /* دعم Firefox */
+  border-radius: 4px; /* إضافة زوايا مدورة خفيفة */
+}
+
+.navbar.scrolled .navbar-brand img[src*="FurnitureTransport.png"] {
+  max-height: 55px; /* حجم مخصص للوجو الصحيح عند التمرير */
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1)) brightness(1.05); /* ظل أخف عند التمرير */
+  -webkit-filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1)) brightness(1.05); /* دعم WebKit */
+  -moz-filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1)) brightness(1.05); /* دعم Firefox */
+}
+
+.navbar-brand .site-name {
+  font-size: 16px; /* زيادة حجم الخط من 14px إلى 16px */
+  font-weight: 700; /* زيادة وزن الخط من 600 إلى 700 */
+  margin-top: 3px; /* زيادة المساحة قليلاً */
+  transition: all 0.3s ease;
+  color: var(--text-color);
+}
+
+.navbar.scrolled .navbar-brand .site-name {
+  font-size: 14px; /* زيادة حجم الخط عند التمرير من 12px إلى 14px */
+}
+
+[data-theme='dark'] .navbar-brand .site-name {
+  color: #fff;
+}
+
+/* تحسينات للوجو في الوضع المظلم */
+[data-theme='dark'] .navbar-brand img[src*="FurnitureTransport.png"] {
+  filter: brightness(1.15) drop-shadow(0 2px 4px rgba(255, 255, 255, 0.1)) contrast(1.1); /* تحسين السطوع والتباين في الوضع المظلم */
+  -webkit-filter: brightness(1.15) drop-shadow(0 2px 4px rgba(255, 255, 255, 0.1)) contrast(1.1); /* دعم WebKit */
+  -moz-filter: brightness(1.15) drop-shadow(0 2px 4px rgba(255, 255, 255, 0.1)) contrast(1.1); /* دعم Firefox */
+}
+
+.nav-link {
+  color: #333333 !important;
+  font-weight: 500;
+  margin: 0 15px;
+  padding: 10px 0;
+  position: relative;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+[data-theme='dark'] .nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: var(--primary-color);
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: var(--primary-color) !important;
+  font-weight: 600;
+}
+
+.phone-number {
+  display: flex;
+  align-items: center;
+}
+
+.phone-link {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color) !important;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.phone-link:hover {
+  background-color: var(--primary-color);
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0;
+  position: relative;
+  z-index: 1000;
+  color: var(--primary-color);
+}
+
+.navbar-toggler-fixed {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  padding: 5px 10px;
+  z-index: 1050;
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Responsive styles */
+@media (max-width: 991.98px) {
+  /* تحسينات للوجو في الشاشات المتوسطة */
+  .navbar-brand img[src*="FurnitureTransport.png"] {
+    max-height: 60px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) brightness(1.05); /* إضافة ظل خفيف وتحسين السطوع */
+    -webkit-filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) brightness(1.05); /* دعم WebKit */
+    -moz-filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) brightness(1.05); /* دعم Firefox */
+  }
+  
+  .navbar.scrolled .navbar-brand img[src*="FurnitureTransport.png"] {
+    max-height: 50px;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1)) brightness(1.05); /* ظل أخف عند التمرير */
+    -webkit-filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1)) brightness(1.05); /* دعم WebKit */
+    -moz-filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1)) brightness(1.05); /* دعم Firefox */
+  }
+  
+  /* Side menu styling */
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: -280px; /* Start off-screen */
+    width: 280px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.98);
+    padding: 80px 20px 20px;
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    z-index: 1040;
+  }
+  
+  /* When menu is expanded */
+  .navbar-collapse.show {
+    right: 0;
+  }
+  
+  [data-theme='dark'] .navbar-collapse {
+    background-color: rgba(26, 26, 26, 0.98);
+  }
+  
+  .nav-link {
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: right;
+    display: block;
+    width: 100%;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Overlay when menu is open */
+  .navbar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1030;
+  }
+  
+  .navbar-overlay.show {
+    display: block;
+  }
+  
+  /* Fix container overflow issues */
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar {
+    padding: 8px 0; /* تقليل البادينج في الموبايل */
+  }
+  
+  .navbar-brand {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-wrapper {
+    width: 80px; /* زيادة عرض اللوجو من 70px إلى 80px */
+    height: 80px; /* زيادة ارتفاع اللوجو من 70px إلى 80px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-brand img {
+    max-height: 75px; /* زيادة حجم اللوجو من 65px إلى 75px */
+    width: auto;
+    object-fit: contain;
+  }
+  
+  .navbar.scrolled .navbar-brand img {
+    max-height: 65px; /* زيادة حجم اللوجو عند التمرير من 55px إلى 65px */
+  }
+  
+  /* تحسينات خاصة للوجو الصحيح في الشاشات الصغيرة */
+  .navbar-brand img[src*="FurnitureTransport.png"] {
+    max-height: 70px; /* حجم مخصص للوجو الصحيح في الشاشات الصغيرة */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) brightness(1.05); /* إضافة ظل خفيف وتحسين السطوع */
+    -webkit-filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) brightness(1.05); /* دعم WebKit */
+    -moz-filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) brightness(1.05); /* دعم Firefox */
+  }
+  
+  .navbar.scrolled .navbar-brand img[src*="FurnitureTransport.png"] {
+    max-height: 60px; /* حجم مخصص للوجو الصحيح عند التمرير في الشاشات الصغيرة */
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1)) brightness(1.05); /* ظل أخف عند التمرير */
+    -webkit-filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1)) brightness(1.05); /* دعم WebKit */
+    -moz-filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1)) brightness(1.05); /* دعم Firefox */
+  }
+  
+  .navbar-brand .site-name {
+    font-size: 14px; /* زيادة حجم الخط من 13px إلى 14px */
+    margin-top: 3px;
+    font-weight: 700;
+    color: #ff8c00 !important; /* Using the primary color from the site's color scheme */
+  }
+  
+  .navbar.scrolled .navbar-brand .site-name {
+    font-size: 13px; /* زيادة حجم الخط عند التمرير من 12px إلى 13px */
+  }
+  
+  /* Add some space between the logo and the toggle button */
+  .navbar-toggler-fixed {
+    margin-left: 10px;
+  }
+  
+  /* Fix mobile layout issues */
+  .navbar {
+    width: 100%;
+    max-width: 100vw;
+  }
+  
+  /* Fix content overflow */
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+}

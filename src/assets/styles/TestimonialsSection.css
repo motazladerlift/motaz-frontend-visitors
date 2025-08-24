@@ -1,0 +1,114 @@
+.testimonials-section {
+  background-color: var(--bg-color-alt);
+  padding: 80px 0;
+  transition: background-color 0.3s ease;
+}
+
+.testimonial-card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 5px 20px var(--shadow-color);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+/* Ensure text is always visible with good contrast in dark mode */
+[data-theme='dark'] .testimonial-text {
+  color: var(--text-color) !important;
+}
+
+[data-theme='dark'] .testimonial-name {
+  color: var(--text-color) !important;
+  font-weight: 600;
+}
+
+[data-theme='dark'] .testimonial-date {
+  color: var(--text-color-muted) !important;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px var(--shadow-color);
+  background-color: var(--card-bg-hover);
+}
+
+.testimonial-rating {
+  color: var(--warning-color);
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.testimonial-rating i {
+  margin-right: 3px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: var(--text-color-secondary);
+  line-height: 1.7;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.testimonial-footer {
+  background-color: var(--bg-color-alt);
+  border-top: 1px solid var(--border-color);
+  border-radius: 0 0 10px 10px;
+  padding: 15px 20px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.testimonial-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--primary-color);
+  background-color: var(--bg-color-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.testimonial-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.testimonial-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.testimonial-date {
+  color: var(--text-color-muted);
+  font-size: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.review-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.review-link:hover {
+  background-color: var(--primary-bg);
+  color: var(--primary-dark);
+}
+
+/* Responsive styles */
+@media (max-width: 767.98px) {
+  .testimonial-card {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,290 @@
+.contact-section {
+  background-color: var(--bg-color-alt);
+  padding: 80px 0;
+  transition: background-color 0.3s ease;
+}
+
+.contact-intro {
+  color: var(--text-color-secondary);
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+  transition: color 0.3s ease;
+}
+
+.contact-info-card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 30px;
+  height: 100%;
+  box-shadow: 0 5px 20px var(--shadow-color);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.contact-info-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: var(--text-color);
+  position: relative;
+  padding-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.contact-info-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 50px;
+  background-color: var(--primary-color);
+  transition: background-color 0.3s ease;
+}
+
+.contact-info-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.contact-info-item i {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-right: 15px;
+  margin-top: 5px;
+  transition: color 0.3s ease;
+}
+
+.contact-info-item a {
+  color: var(--text-color-secondary);
+  transition: all 0.3s ease;
+}
+
+.contact-info-item a:hover {
+  color: var(--primary-color);
+}
+
+.contact-hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-hours-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: var(--text-color-secondary);
+  transition: color 0.3s ease;
+}
+
+.contact-form-card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 30px;
+  height: 100%;
+  box-shadow: 0 5px 20px var(--shadow-color);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+/* Ensure text is always visible with good contrast in dark mode */
+[data-theme='dark'] .contact-form-title,
+[data-theme='dark'] .contact-info-title,
+[data-theme='dark'] .contact-info-subtitle,
+[data-theme='dark'] .form-label {
+  color: var(--text-color) !important;
+}
+
+[data-theme='dark'] .contact-info-item a,
+[data-theme='dark'] .contact-hours-list li {
+  color: var(--text-color-secondary) !important;
+}
+
+.contact-form-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: var(--text-color);
+  position: relative;
+  padding-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.contact-form-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 50px;
+  background-color: var(--primary-color);
+  transition: background-color 0.3s ease;
+}
+
+.form-label {
+  font-weight: 500;
+  color: var(--text-color-secondary);
+  transition: color 0.3s ease;
+}
+
+.form-control {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+/* Enhanced file upload button */
+input[type="file"].form-control {
+  padding: 8px;
+}
+
+/* Custom file upload button styling */
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: var(--card-bg-hover);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.custom-file-upload:hover {
+  background-color: var(--primary-bg);
+  border-color: var(--primary-color);
+}
+
+[data-theme='dark'] .custom-file-upload {
+  background-color: var(--card-bg-hover);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+[data-theme='dark'] .custom-file-upload:hover {
+  background-color: var(--primary-bg);
+  border-color: var(--primary-color);
+}
+
+/* Fix for inputs turning white when focused */
+.form-control:focus,
+.form-control:active,
+input.form-control[type="text"],
+input.form-control[type="email"],
+input.form-control[type="tel"],
+input.form-control[type="date"],
+input.form-control[type="file"],
+textarea.form-control {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+/* Improve placeholder text contrast in dark mode */
+[data-theme='dark'] .form-control::placeholder {
+  color: var(--text-color-secondary) !important;
+  opacity: 0.8;
+}
+
+/* Improve text inside input fields in dark mode */
+[data-theme='dark'] .form-control {
+  color: var(--text-color) !important;
+  border-color: var(--border-color);
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem var(--primary-bg);
+  outline: none;
+}
+
+.contact-submit-btn {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px 30px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.contact-submit-btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+/* Responsive styles */
+@media (max-width: 991.98px) {
+  .contact-info-card,
+  .contact-form-card {
+    margin-bottom: 30px;
+  }
+}
+
+/* Selected file display styling */
+.selected-file {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: var(--bg-color-alt);
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-size: 0.9rem;
+  word-break: break-all;
+}
+
+[data-theme='dark'] .selected-file {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+@media (max-width: 767.98px) {
+  .contact-info-card {
+    margin-bottom: 30px;
+  }
+  
+  .contact-info-title,
+  .contact-form-title {
+    text-align: center;
+  }
+  
+  .contact-info-title::after,
+  .contact-form-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .contact-info-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .contact-info-item i {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .contact-hours-list li {
+    flex-direction: column;
+    text-align: center;
+  }
+}

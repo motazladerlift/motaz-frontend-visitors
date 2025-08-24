@@ -1,0 +1,299 @@
+.contact-options-section {
+  padding: 80px 0;
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.section-divider {
+  height: 3px;
+  background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+  width: 80px;
+  margin: 0 auto 20px;
+}
+
+.section-subtitle {
+  color: var(--text-color-secondary);
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
+}
+
+/* New contact cards container */
+.contact-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contact-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px var(--shadow-color);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  position: relative;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px var(--shadow-color);
+}
+
+.contact-card-icon {
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3rem;
+  transition: all 0.3s ease;
+}
+
+.contact-card-content {
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.contact-card-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.contact-card-content p {
+  color: var(--text-color-secondary);
+  margin-bottom: 20px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.contact-card-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.contact-card-link:hover {
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+
+.arrow-icon {
+  margin-left: 8px;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.contact-card-link:hover .arrow-icon {
+  transform: translateX(5px);
+}
+
+/* Reservation banner */
+.reservation-banner {
+  margin-top: 40px;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  border-radius: 16px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(255, 140, 0, 0.2);
+}
+
+.reservation-content {
+  padding: 30px;
+  flex: 1;
+  min-width: 280px;
+}
+
+.reservation-content h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.reservation-content p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+
+.reservation-button {
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 15px 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  margin: 30px;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+
+/* Dark mode specific styles with high contrast */
+[data-theme='dark'] .contact-options-section {
+  background-color: var(--dark-bg-color);
+}
+
+[data-theme='dark'] .section-title {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .section-divider {
+  background: linear-gradient(to right, transparent, var(--primary-light), transparent);
+}
+
+[data-theme='dark'] .section-subtitle {
+  color: #e0e0e0;
+}
+
+[data-theme='dark'] .contact-card {
+  background-color: var(--dark-card-bg);
+  border-color: var(--dark-border-color);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .contact-card:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme='dark'] .contact-card-icon {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+}
+
+[data-theme='dark'] .contact-card-content h3 {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .contact-card-content p {
+  color: #e0e0e0;
+}
+
+[data-theme='dark'] .contact-card-link {
+  color: var(--primary-light);
+}
+
+[data-theme='dark'] .contact-card-link:hover {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .reservation-banner {
+  background: linear-gradient(135deg, var(--primary-dark), #e67e00);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .reservation-button {
+  color: var(--primary-dark);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] .reservation-button:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 992px) {
+  .contact-cards-container {
+    justify-content: center;
+  }
+  
+  .contact-card {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+  
+  .reservation-banner {
+    flex-direction: column;
+  }
+  
+  .reservation-content {
+    padding: 30px 30px 0;
+    text-align: center;
+  }
+  
+  .reservation-button {
+    margin: 20px auto 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-options-section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .contact-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .contact-card-icon {
+    height: 100px;
+    font-size: 2.5rem;
+  }
+  
+  .contact-card-content {
+    padding: 20px 15px;
+  }
+  
+  .contact-card-content h3 {
+    font-size: 1.3rem;
+  }
+  
+  .reservation-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .reservation-content p {
+    font-size: 1rem;
+  }
+  
+  .reservation-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}

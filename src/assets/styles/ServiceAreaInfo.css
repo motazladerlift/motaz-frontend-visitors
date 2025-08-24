@@ -1,0 +1,116 @@
+.service-area-section {
+  padding: 2rem 0;
+}
+
+/* Main container */
+.area-info-container {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header - Orange */
+.area-header {
+  background-color: #ff9800;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* Locations - Dark */
+.area-locations {
+  background-color: #212529;
+  color: #fff;
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+}
+
+.area-locations p {
+  margin-bottom: 0.5rem;
+}
+
+.area-locations p:last-child {
+  margin-bottom: 0;
+}
+
+/* Timing - Yellow */
+.area-timing {
+  background-color: #ffca2c;
+  color: #000;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Lift - White with red text */
+.area-lift {
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.area-lift p {
+  color: #dc3545;
+  margin-bottom: 0.5rem;
+}
+
+.area-lift p:last-child {
+  margin-bottom: 0;
+}
+
+/* Map - Dark */
+.area-map {
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.area-map img {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Parking - Yellow */
+.area-parking {
+  background-color: #ffca2c;
+  color: #000;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Payment - Dark */
+.area-payment {
+  background-color: #212529;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .area-header {
+    font-size: 1.1rem;
+    padding: 0.75rem 1rem;
+  }
+  
+  .area-locations,
+  .area-timing,
+  .area-lift,
+  .area-parking,
+  .area-payment {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .area-map {
+    padding: 1.5rem 1rem;
+  }
+  
+  .area-map img {
+    max-width: 300px;
+  }
+} 

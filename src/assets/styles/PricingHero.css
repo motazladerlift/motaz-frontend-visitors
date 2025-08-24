@@ -1,0 +1,50 @@
+.pricing-hero-section {
+  background-color: var(--bg-color);
+  padding: 100px 0 50px;
+  position: relative;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.pricing-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.pricing-hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-color-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+  transition: color 0.3s ease;
+}
+
+/* Dark mode specific styles with high contrast */
+[data-theme='dark'] .pricing-hero-section {
+  background-color: var(--dark-bg-color);
+}
+
+[data-theme='dark'] .pricing-hero-title {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .pricing-hero-subtitle {
+  color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .pricing-hero-section {
+    padding: 70px 0 40px;
+  }
+  
+  .pricing-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .pricing-hero-subtitle {
+    font-size: 1.1rem;
+  }
+}

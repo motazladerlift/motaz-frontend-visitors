@@ -1,0 +1,44 @@
+.advantages-section {
+  background-color: var(--bg-color-alt);
+  padding: 80px 0;
+  transition: background-color 0.3s ease;
+}
+
+.advantages-list {
+  margin-top: 20px;
+}
+
+.advantage-list-item {
+  color: var(--text-color);
+  padding: 12px 0;
+  font-weight: 500;
+  border-bottom: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  line-height: 1.5;
+}
+
+.advantage-list-item:last-child {
+  border-bottom: none;
+}
+
+/* Ensure text is always visible with good contrast */
+[data-theme='dark'] .advantage-list-item {
+  color: var(--text-color) !important;
+}
+
+/* Responsive styles */
+@media (max-width: 767.98px) {
+  .advantages-section {
+    padding: 60px 0;
+  }
+  
+  .advantage-list-item {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .advantages-section {
+    padding: 40px 0;
+  }
+}

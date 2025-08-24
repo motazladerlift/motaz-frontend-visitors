@@ -1,0 +1,296 @@
+/* LadderliftPage.css */
+.ladderlift-page {
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.ladderlift-hero {
+  position: relative;
+  background-color: #1e1e1e;
+  padding: 120px 0;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.ladderlift-hero .overlay {
+  display: none;
+}
+
+.ladderlift-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.ladderlift-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #ff8c00;
+}
+
+.ladderlift-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.ladderlift-features li {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.ladderlift-features li:hover {
+  transform: translateX(5px);
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.ladderlift-features li.emergency-service {
+  background-color: rgba(255, 140, 0, 0.4);
+  font-weight: 700;
+}
+
+/* Main Content Section */
+.ladderlift-content {
+  padding: 60px 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.ladderlift-content h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.ladderlift-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.btn-primary-custom {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-custom {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="dark"] .btn-outline-custom {
+  color: white;
+  border-color: white;
+}
+
+/* Benefits Section */
+.ladderlift-benefits {
+  padding: 80px 0;
+  background-color: var(--alt-bg-color);
+  color: var(--text-color);
+}
+
+.ladderlift-benefits h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.benefit-card {
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  padding: 30px 20px;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.icon-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.icon-wrapper i {
+  font-size: 2.5rem;
+}
+
+.benefit-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.benefit-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Technical Specifications */
+.ladderlift-specs {
+  padding: 80px 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.ladderlift-specs h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.specs-container {
+  background-color: var(--alt-bg-color);
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.spec-item {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.spec-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.spec-item h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.spec-item p {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+/* Call to Action */
+.ladderlift-cta {
+  padding: 80px 0;
+  background-color: var(--bg-color-alt); /* Light gray background */
+  color: var(--text-color); /* Black text in light mode */
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ladderlift-cta h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.ladderlift-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .ladderlift-cta {
+  background-color: var(--primary-color);
+  color: white;
+  border-top: none;
+  border-bottom: none;
+}
+
+[data-theme="dark"] .benefit-card {
+  background-color: var(--dark-bg-color);
+}
+
+[data-theme="dark"] .specs-container {
+  background-color: var(--dark-bg-color);
+}
+
+[data-theme="dark"] .spec-item {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ladderlift-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .ladderlift-features li {
+    font-size: 1rem;
+  }
+  
+  .ladderlift-content h2,
+  .ladderlift-benefits h2,
+  .ladderlift-specs h2,
+  .ladderlift-cta h2 {
+    font-size: 1.8rem;
+  }
+  
+  .specs-container {
+    padding: 20px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+  
+  [data-theme="dark"] .ladderlift-cta h2,
+  [data-theme="dark"] .ladderlift-cta p {
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+}

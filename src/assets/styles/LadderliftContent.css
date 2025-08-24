@@ -1,0 +1,103 @@
+.ladderlift-content {
+  padding: 60px 0;
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease;
+}
+
+/* Ensure dark background in dark mode */
+[data-theme='dark'] .ladderlift-content {
+  background-color: #121212 !important; /* Explicit dark background */
+}
+
+.ladderlift-content h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.ladderlift-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #333333; /* Darker text color for better visibility in light mode */
+  transition: color 0.3s ease;
+}
+
+.btn-primary-custom {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Light mode specific styles with high contrast */
+[data-theme='light'] .ladderlift-content p,
+body:not([data-theme='dark']) .ladderlift-content p {
+  color: #333333; /* Ensure dark text on light background */
+}
+
+/* Dark mode specific styles with high contrast */
+[data-theme='dark'] .ladderlift-content h2 {
+  color: #ff9d2f !important; /* Brighter orange for better visibility in dark mode */
+}
+
+[data-theme='dark'] .ladderlift-content p {
+  color: #ffffff !important; /* Explicitly white for maximum contrast */
+}
+
+/* Target all text elements in dark mode */
+[data-theme='dark'] .ladderlift-content {
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .ladderlift-content * {
+  color: inherit;
+}
+
+[data-theme='dark'] .btn-primary-custom {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+[data-theme='dark'] .btn-primary-custom:hover {
+  background-color: var(--primary-light);
+  border-color: var(--primary-light);
+}
+
+/* Target the specific motion div inside ladderlift-content */
+[data-theme='dark'] .ladderlift-content motion.div,
+[data-theme='dark'] .ladderlift-content div {
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .ladderlift-content motion.div p,
+[data-theme='dark'] .ladderlift-content div p {
+  color: #ffffff !important; 
+}
+
+@media (max-width: 768px) {
+  .ladderlift-content {
+    padding: 40px 0;
+  }
+  
+  .ladderlift-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .ladderlift-content p {
+    font-size: 1rem;
+  }
+}

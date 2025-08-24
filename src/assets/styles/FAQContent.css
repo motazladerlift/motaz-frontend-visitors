@@ -1,0 +1,195 @@
+.faq-content {
+  padding: 60px 0;
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease;
+}
+
+.search-container {
+  margin-bottom: 40px;
+}
+
+.search-container .form-control {
+  padding: 15px 20px;
+  border-radius: 30px 0 0 30px;
+  border: 1px solid var(--border-color);
+  font-size: 1.1rem;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  box-shadow: 0 3px 10px var(--shadow-color);
+  transition: all 0.3s ease;
+}
+
+.search-container .btn {
+  border-radius: 0 30px 30px 0;
+  padding: 0 20px;
+  background-color: var(--card-bg-hover);
+  border-color: var(--border-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.search-container .btn:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.faq-accordion {
+  margin-bottom: 40px;
+}
+
+.faq-accordion .accordion-item {
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--card-bg);
+  box-shadow: 0 3px 10px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.faq-accordion .accordion-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.faq-accordion .accordion-button {
+  padding: 20px 25px;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: none;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+  background-color: var(--card-bg);
+  color: var(--primary-color);
+  box-shadow: none;
+}
+
+.faq-accordion .accordion-button:focus {
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+
+.faq-accordion .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ff8c00'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  transition: transform 0.3s ease;
+}
+
+.faq-accordion .accordion-body {
+  padding: 0 25px 20px;
+  background-color: var(--card-bg);
+  color: var(--text-color-secondary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.faq-accordion .accordion-body p {
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.no-results i {
+  font-size: 3rem;
+  color: var(--text-color-muted);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.no-results h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.no-results p {
+  color: var(--text-color-secondary);
+  margin-bottom: 25px;
+}
+
+.no-results .btn {
+  padding: 10px 25px;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.no-results .btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Dark mode specific styles with high contrast */
+[data-theme='dark'] .search-container .form-control {
+  background-color: var(--card-bg);
+  color: #ffffff;
+  border-color: var(--border-color);
+}
+
+[data-theme='dark'] .search-container .btn {
+  background-color: var(--card-bg-hover);
+  border-color: var(--border-color);
+  color: #ffffff;
+}
+
+[data-theme='dark'] .search-container .btn:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+[data-theme='dark'] .faq-accordion .accordion-item {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+[data-theme='dark'] .faq-accordion .accordion-button {
+  background-color: var(--card-bg);
+  color: #ffffff;
+}
+
+[data-theme='dark'] .faq-accordion .accordion-button:not(.collapsed) {
+  background-color: var(--card-bg);
+  color: var(--primary-light);
+}
+
+[data-theme='dark'] .faq-accordion .accordion-body {
+  background-color: var(--card-bg);
+  color: #e0e0e0;
+}
+
+[data-theme='dark'] .no-results h3 {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .no-results p {
+  color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .faq-content {
+    padding: 40px 0;
+  }
+  
+  .search-container .form-control,
+  .search-container .btn {
+    padding: 12px 15px;
+  }
+  
+  .faq-accordion .accordion-button {
+    padding: 15px 20px;
+    font-size: 1rem;
+  }
+  
+  .faq-accordion .accordion-body {
+    padding: 0 20px 15px;
+  }
+}

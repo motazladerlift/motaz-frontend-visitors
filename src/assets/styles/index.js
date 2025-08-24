@@ -1,0 +1,19 @@
+// Import all CSS files
+import './Header.css';
+import './Footer.css';
+import './WhatsAppButton.css';
+import './BackToTopButton.css';
+import './DarkModeToggle.css';
+import './HeroSection.css';
+import './AdvantagesSection.css';
+import './AboutSection.css';
+import './LastMinuteSection.css';
+import './TestimonialsSection.css';
+import './ContactSection.css';
+import './WorkInProgress.css';
+import './PricingPage.css';
+import './LadderliftPage.css';
+import './VerhuizenPage.css';
+import './ContactPage.css';
+import './FAQPage.css';
+import './CTASection.css';

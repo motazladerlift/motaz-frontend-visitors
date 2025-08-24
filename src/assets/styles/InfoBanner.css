@@ -1,0 +1,72 @@
+.pricing-info-banner {
+  background-color: var(--primary-bg);
+  padding: 20px 0;
+  margin-bottom: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.info-banner-content {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 8px;
+  background-color: var(--card-bg);
+  box-shadow: 0 4px 15px var(--shadow-color);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.info-icon {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-right: 15px;
+  flex-shrink: 0;
+  transition: color 0.3s ease;
+}
+
+.info-banner-content p {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+/* Dark mode specific styles with high contrast */
+[data-theme='dark'] .pricing-info-banner {
+  background-color: var(--dark-bg-color);
+}
+
+[data-theme='dark'] .info-banner-content {
+  background-color: var(--dark-card-bg);
+  border-color: var(--dark-border-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] .info-icon {
+  color: var(--primary-light);
+}
+
+[data-theme='dark'] .info-banner-content p {
+  color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .pricing-info-banner {
+    padding: 15px 0;
+    margin-bottom: 30px;
+  }
+  
+  .info-banner-content {
+    padding: 12px 15px;
+  }
+  
+  .info-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  .info-banner-content p {
+    font-size: 0.9rem;
+  }
+}

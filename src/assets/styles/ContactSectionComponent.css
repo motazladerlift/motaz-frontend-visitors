@@ -1,0 +1,227 @@
+.contact-section {
+  background-color: var(--bg-color-alt);
+  padding: 80px 0;
+  transition: background-color 0.3s ease;
+}
+
+.contact-info-card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 30px;
+  height: 100%;
+  box-shadow: 0 5px 20px var(--shadow-color);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.contact-info-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: var(--text-color);
+  position: relative;
+  padding-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.contact-info-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 50px;
+  background-color: var(--primary-color);
+  transition: background-color 0.3s ease;
+}
+
+.contact-info-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.contact-info-item i {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-right: 15px;
+  margin-top: 5px;
+  transition: color 0.3s ease;
+}
+
+.contact-info-item a {
+  color: var(--text-color-secondary);
+  transition: all 0.3s ease;
+}
+
+.contact-info-item a:hover {
+  color: var(--primary-color);
+}
+
+.contact-hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-hours-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: var(--text-color-secondary);
+  transition: color 0.3s ease;
+}
+
+.contact-form-card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 30px;
+  height: 100%;
+  box-shadow: 0 5px 20px var(--shadow-color);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.contact-form-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: var(--text-color);
+  position: relative;
+  padding-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.contact-form-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 50px;
+  background-color: var(--primary-color);
+  transition: background-color 0.3s ease;
+}
+
+.form-label {
+  font-weight: 500;
+  color: var(--text-color-secondary);
+  transition: color 0.3s ease;
+}
+
+.form-control {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+/* Custom file upload button styling */
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: var(--card-bg-hover);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.custom-file-upload:hover {
+  background-color: var(--primary-bg);
+  border-color: var(--primary-color);
+}
+
+.selected-file {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: var(--primary-bg);
+  border-radius: 5px;
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+/* Fix for inputs turning white when focused */
+.form-control:focus,
+.form-control:active,
+input.form-control[type="text"],
+input.form-control[type="email"],
+input.form-control[type="tel"],
+input.form-control[type="date"],
+input.form-control[type="file"],
+textarea.form-control {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+/* Improve placeholder text contrast in dark mode */
+[data-theme='dark'] .form-control::placeholder {
+  color: var(--text-color-secondary) !important;
+  opacity: 0.8;
+}
+
+.contact-submit-btn {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px 30px;
+  font-weight: 600;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-submit-btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark mode specific styles with high contrast */
+[data-theme='dark'] .contact-info-title,
+[data-theme='dark'] .contact-form-title,
+[data-theme='dark'] .contact-info-subtitle {
+  color: #ffffff !important; /* Pure white for maximum contrast */
+}
+
+[data-theme='dark'] .form-label {
+  color: #e0e0e0 !important; /* Very light gray for good contrast */
+}
+
+[data-theme='dark'] .contact-info-item a,
+[data-theme='dark'] .contact-hours-list li {
+  color: #e0e0e0 !important; /* Light gray for good contrast */
+}
+
+[data-theme='dark'] .contact-info-item a:hover {
+  color: var(--primary-light) !important;
+}
+
+[data-theme='dark'] .form-text {
+  color: #b0b0b0 !important; /* Lighter gray for form helper text */
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 0;
+  }
+  
+  .contact-info-card,
+  .contact-form-card {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,82 @@
+.location-section {
+  background-color: var(--bg-color-alt);
+  padding: 60px 0;
+  transition: background-color 0.3s ease;
+}
+
+.map-container {
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.map-container:hover {
+  box-shadow: 0 10px 25px var(--shadow-color) !important;
+}
+
+.google-map {
+  transition: all 0.3s ease;
+}
+
+.address-card, .contact-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.address-card:hover, .contact-card:hover {
+  box-shadow: 0 8px 20px var(--shadow-color);
+  transform: translateY(-5px);
+}
+
+.address-card h4, .contact-card h4 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.address-card p, .contact-card p {
+  color: var(--text-color-secondary);
+  margin-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.contact-card a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Dark mode specific styles with high contrast */
+[data-theme='dark'] .address-card h4,
+[data-theme='dark'] .contact-card h4 {
+  color: var(--primary-color) !important; /* Ensure primary color stands out */
+}
+
+[data-theme='dark'] .address-card p,
+[data-theme='dark'] .contact-card p {
+  color: #e0e0e0 !important; /* Light gray for good contrast */
+}
+
+[data-theme='dark'] .contact-card a {
+  color: #6da9ff !important; /* Brighter blue for better contrast in dark mode */
+}
+
+[data-theme='dark'] .contact-card a:hover {
+  color: var(--primary-light) !important;
+}
+
+@media (max-width: 768px) {
+  .location-section {
+    padding: 40px 0;
+  }
+}

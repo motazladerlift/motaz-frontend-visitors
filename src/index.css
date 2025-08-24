@@ -1,0 +1,165 @@
+:root {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Light mode (default) */
+  --primary-color: #ff8c00;
+  --primary-dark: #e67e00;
+  --primary-light: #ffb05c;
+  --primary-bg: rgba(255, 140, 0, 0.1);
+  --text-color: #333;
+  --text-color-secondary: #666;
+  --text-color-muted: #888;
+  --bg-color: #f5f5f5;
+  --bg-color-alt: #eaeaea;
+  --bg-color-dark: #e0e0e0;
+  --accent-color: #3a7bd5;
+  --card-bg: #e8edf2;  /* Changed from #f0f2f5 to a slightly bluer gray */
+  --card-bg-hover: #dce4ec;  /* Changed to match new card-bg */
+  --border-color: #ddd;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --header-bg: #ffffff;
+  --footer-bg: #333;
+  --footer-text: #f5f5f5;
+  --footer-text-muted: #aaa;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --info-color: #17a2b8;
+  --secondary-color: #6c757d;
+  --secondary-dark: #545b62;
+  --input-bg: #ffffff;
+  --alt-bg-color: #f8f9fa;
+}
+
+/* Dark mode */
+[data-theme='dark'] {
+  --primary-color: #ff9d2f;
+  --primary-dark: #ffb05c;
+  --primary-light: #ffc285;
+  --primary-bg: rgba(255, 157, 47, 0.15);
+  --text-color: #f0f0f0;  /* Lighter for better contrast */
+  --text-color-secondary: #d0d0d0;  /* Lighter for better contrast */
+  --text-color-muted: #a0a0a0;
+  --bg-color: #121212;
+  --bg-color-alt: #1e1e1e;
+  --bg-color-dark: #282828;
+  --accent-color: #4d8be6;
+  --card-bg: #2a2a2a;  /* Slightly lighter for better contrast */
+  --card-bg-hover: #353535;  /* Adjusted to match new card-bg */
+  --border-color: #444;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --header-bg: #1a1a1a;
+  --footer-bg: #1a1a1a;
+  --footer-text: #e0e0e0;
+  --footer-text-muted: #909090;
+  --success-color: #2fb380;
+  --warning-color: #e6c619;
+  --danger-color: #e64c4c;
+  --info-color: #4cb8e6;
+  --secondary-color: #6c757d;
+  --secondary-dark: #545b62;
+  --input-bg: #3a3a3a;
+  --alt-bg-color: #2a2a2a;
+  --dark-card-bg: #2a2a2a;
+  --dark-card-bg-hover: #353535;
+  --dark-border-color: #444;
+  --dark-input-bg: #3a3a3a;
+}
+
+/* Apply base colors */
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  font-weight: 500;
+  color: #ff8c00;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #e67e00;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+button {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: #ff8c00;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #e67e00;
+  transform: translateY(-2px);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid rgba(255, 140, 0, 0.3);
+}

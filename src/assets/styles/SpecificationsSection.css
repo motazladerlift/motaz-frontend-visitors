@@ -1,0 +1,79 @@
+.specifications-section {
+  padding: 80px 0;
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease;
+}
+
+.specs-container {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 5px 15px var(--shadow-color);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.spec-item {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+  transition: border-color 0.3s ease;
+}
+
+.spec-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.spec-item h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.spec-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color-secondary);
+  transition: color 0.3s ease;
+}
+
+/* Dark mode specific styles with high contrast */
+[data-theme='dark'] .specs-container {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+[data-theme='dark'] .spec-item {
+  border-color: var(--border-color);
+}
+
+[data-theme='dark'] .spec-item h4 {
+  color: #ffffff; /* Pure white for maximum contrast */
+}
+
+[data-theme='dark'] .spec-item p {
+  color: #e0e0e0; /* Light gray for good contrast */
+}
+
+@media (max-width: 768px) {
+  .specifications-section {
+    padding: 60px 0;
+  }
+  
+  .specs-container {
+    padding: 25px;
+  }
+  
+  .spec-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+  
+  .spec-item h4 {
+    font-size: 1.1rem;
+  }
+}
